@@ -1,280 +1,58 @@
-Contribution: 2021-11-17 14:00
+# Real Estate NFT
 
-Contribution: 2021-11-17 17:01
+This project demonstrates the use of the ERC721 standard to create an NFT collection which is deployed to Rinkeby and listed on opensea testnet.
 
-Contribution: 2021-11-17 17:02
 
-Contribution: 2021-11-17 13:03
+## Development
 
-Contribution: 2021-11-17 14:04
+Firstly run  `npm i` to install all the dependenicies used in this project which are specified in the package.json file.
 
-Contribution: 2021-11-18 15:00
+### Testing
+Js unit tests for the solidity contract was used. To run tests, go to your terminal and run :
 
-Contribution: 2021-11-18 13:01
+```
+cd eth-contracts
+``` 
+next run : 
+```
+truffle test 
+```
 
-Contribution: 2021-11-18 14:02
+you should be greated with a printout like below
+![](./images/test-truffle.png)
 
-Contribution: 2021-11-18 16:03
+### Compile Zokrates
+```
+docker run -v /Users/eo/workspace/Blockchain-Capstone/zokrates/code/square:/home/zokrates/code -it zokrates/zokrates:0.4.6 /bin/bash
+```
+once inside the docker container shell, run 
+```
+  ~/zokrates compile -i square.code && \
+  ~/zokrates setup && \
+  ~/zokrates compute-witness -a 3 9 && \
+  ~/zokrates generate-proof && \
+  ~/zokrates export-verifier
 
-Contribution: 2021-11-18 13:04
+```
 
-Contribution: 2021-11-18 17:05
+## Deployed contract 
 
-Contribution: 2021-11-20 17:00
+### Ether scan SolnSquareVerifier address
+https://rinkeby.etherscan.io/address/0xb128081e5e05bd793b954c3b92089d6b8c77c2c5
 
-Contribution: 2021-11-20 15:01
+10 tokens Minted using MEW https://www.myetherwallet.com/wallet/interact
 
-Contribution: 2021-11-20 14:02
+### Open sea Collection
+https://testnets.opensea.io/collection/edwintop-realestate
 
-Contribution: 2021-11-20 13:03
 
-Contribution: 2021-11-20 13:04
+# Project Resources
 
-Contribution: 2021-11-20 16:05
-
-Contribution: 2021-11-21 15:00
-
-Contribution: 2021-11-22 13:00
-
-Contribution: 2021-11-22 16:01
-
-Contribution: 2021-11-22 13:02
-
-Contribution: 2021-11-22 17:03
-
-Contribution: 2021-11-22 17:04
-
-Contribution: 2021-11-22 13:05
-
-Contribution: 2021-11-22 13:06
-
-Contribution: 2021-11-22 16:07
-
-Contribution: 2021-11-23 15:00
-
-Contribution: 2021-11-23 15:01
-
-Contribution: 2021-11-23 17:02
-
-Contribution: 2021-11-23 16:03
-
-Contribution: 2021-11-23 15:04
-
-Contribution: 2021-11-23 14:05
-
-Contribution: 2021-11-23 16:06
-
-Contribution: 2021-11-23 13:07
-
-Contribution: 2021-11-26 16:00
-
-Contribution: 2021-11-26 13:01
-
-Contribution: 2021-11-26 13:02
-
-Contribution: 2021-11-27 13:00
-
-Contribution: 2021-11-27 17:01
-
-Contribution: 2021-11-27 13:02
-
-Contribution: 2021-11-27 17:03
-
-Contribution: 2021-11-27 17:04
-
-Contribution: 2021-11-27 15:05
-
-Contribution: 2021-11-27 17:06
-
-Contribution: 2021-11-27 16:07
-
-Contribution: 2021-11-28 13:00
-
-Contribution: 2021-11-28 17:01
-
-Contribution: 2021-11-28 15:02
-
-Contribution: 2021-11-30 13:00
-
-Contribution: 2021-11-30 13:01
-
-Contribution: 2021-11-30 16:02
-
-Contribution: 2021-12-01 17:00
-
-Contribution: 2021-12-01 17:01
-
-Contribution: 2021-12-01 14:02
-
-Contribution: 2021-12-01 14:03
-
-Contribution: 2021-12-01 15:04
-
-Contribution: 2021-12-01 15:05
-
-Contribution: 2021-12-01 15:06
-
-Contribution: 2021-12-01 13:07
-
-Contribution: 2021-12-01 14:08
-
-Contribution: 2021-12-03 15:00
-
-Contribution: 2021-12-03 15:01
-
-Contribution: 2021-12-03 14:02
-
-Contribution: 2021-12-03 14:03
-
-Contribution: 2021-12-03 13:04
-
-Contribution: 2021-12-08 13:00
-
-Contribution: 2021-12-08 13:01
-
-Contribution: 2021-12-10 16:00
-
-Contribution: 2021-12-10 13:01
-
-Contribution: 2021-12-11 17:00
-
-Contribution: 2021-12-11 17:01
-
-Contribution: 2021-12-11 16:02
-
-Contribution: 2021-12-11 13:03
-
-Contribution: 2021-12-11 16:04
-
-Contribution: 2021-12-11 17:05
-
-Contribution: 2021-12-11 14:06
-
-Contribution: 2021-12-11 16:07
-
-Contribution: 2021-12-13 14:00
-
-Contribution: 2021-12-14 15:00
-
-Contribution: 2021-12-14 17:01
-
-Contribution: 2021-12-14 14:02
-
-Contribution: 2021-12-14 15:03
-
-Contribution: 2021-12-14 14:04
-
-Contribution: 2021-12-14 14:05
-
-Contribution: 2021-12-16 13:00
-
-Contribution: 2021-12-16 17:01
-
-Contribution: 2021-12-17 16:00
-
-Contribution: 2021-12-17 15:01
-
-Contribution: 2021-12-17 14:02
-
-Contribution: 2021-12-17 15:03
-
-Contribution: 2021-12-17 14:04
-
-Contribution: 2021-12-22 14:00
-
-Contribution: 2021-12-23 17:00
-
-Contribution: 2021-12-23 15:01
-
-Contribution: 2021-12-23 13:02
-
-Contribution: 2021-12-23 13:03
-
-Contribution: 2021-12-23 14:04
-
-Contribution: 2021-12-23 16:05
-
-Contribution: 2021-12-23 14:06
-
-Contribution: 2021-12-23 16:07
-
-Contribution: 2021-12-23 16:08
-
-Contribution: 2021-12-24 13:00
-
-Contribution: 2021-12-24 14:01
-
-Contribution: 2021-12-24 13:02
-
-Contribution: 2021-12-24 15:03
-
-Contribution: 2021-12-24 17:04
-
-Contribution: 2021-12-24 16:05
-
-Contribution: 2021-12-24 14:06
-
-Contribution: 2021-12-24 17:07
-
-Contribution: 2021-12-25 15:00
-
-Contribution: 2021-12-25 13:01
-
-Contribution: 2021-12-25 16:02
-
-Contribution: 2021-12-25 15:03
-
-Contribution: 2021-12-25 16:04
-
-Contribution: 2021-12-25 16:05
-
-Contribution: 2021-12-26 14:00
-
-Contribution: 2021-12-26 17:01
-
-Contribution: 2021-12-26 16:02
-
-Contribution: 2021-12-26 15:03
-
-Contribution: 2021-12-28 17:00
-
-Contribution: 2021-12-28 17:01
-
-Contribution: 2021-12-28 17:02
-
-Contribution: 2021-12-28 13:03
-
-Contribution: 2021-12-28 17:04
-
-Contribution: 2021-12-29 17:00
-
-Contribution: 2021-12-29 17:01
-
-Contribution: 2021-12-29 17:02
-
-Contribution: 2022-01-01 15:00
-
-Contribution: 2022-01-01 16:01
-
-Contribution: 2022-01-01 17:02
-
-Contribution: 2022-01-01 17:03
-
-Contribution: 2022-01-01 16:04
-
-Contribution: 2022-01-01 16:05
-
-Contribution: 2022-01-01 13:06
-
-Contribution: 2022-01-01 13:07
-
-Contribution: 2022-01-01 17:08
-
-Contribution: 2022-01-03 14:00
-
-Contribution: 2022-01-03 16:01
-
-Contribution: 2022-01-03 15:02
-
-Contribution: 2022-01-03 16:03
-
+* [Remix - Solidity IDE](https://remix.ethereum.org/)
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [Truffle Framework](https://truffleframework.com/)
+* [Ganache - One Click Blockchain](https://truffleframework.com/ganache)
+* [Open Zeppelin ](https://openzeppelin.org/)
+* [Interactive zero knowledge 3-colorability demonstration](http://web.mit.edu/~ezyang/Public/graph/svg.html)
+* [Docker](https://docs.docker.com/install/)
+* [ZoKrates](https://github.com/Zokrates/ZoKrates)
